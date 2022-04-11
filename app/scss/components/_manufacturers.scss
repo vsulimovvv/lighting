@@ -1,0 +1,63 @@
+.manufacturers {
+  @include adaptive-value('padding-top', 45, 30, 1);
+  @include adaptive-value('padding-bottom', 75, 40, 1);
+
+  &__title {
+    @include adaptive-value('font-size', 35, 25, 1);
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 25px;
+  }
+
+  &__top {
+    @include adaptive-value('margin-bottom', 50, 40, 1);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    @include adaptive-value('margin-bottom', 65, 40, 1);
+  }
+  &__content {
+    position: relative;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .brands-card {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 145px;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    &:hover {
+      box-shadow: none;
+      border: 1px solid #e3e3e3;
+    }
+
+    &__img {
+      max-width: 120px;
+      height: 40px;
+    }
+
+    &__name {
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 400;
+      color: #777777;
+    }
+  }
+}

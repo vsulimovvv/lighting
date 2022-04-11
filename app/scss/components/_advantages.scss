@@ -1,0 +1,73 @@
+.advantages {
+  @include adaptive-value('padding-top', 50, 40, 1);
+  @include adaptive-value('padding-bottom', 50, 40, 1);
+
+  &__name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-green);
+    display: block;
+    margin-bottom: 10px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 40px;
+    justify-content: space-between;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: calc(20px + (40 - 20) * ((100vw - 991px) / (1300 - 991)));
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      gap: 40px;
+      grid-template-columns: repeat(2, minmax(auto, 300px));
+      justify-content: center;
+    }
+    @include breakpointsMaxW($bp-576) {
+      grid-template-columns: minmax(auto, 300px);
+    }
+  }
+
+  &__descr {
+    color: var(--color-gray);
+  }
+
+  &__item {
+    padding-left: 40px;
+    position: relative;
+
+    &::after {
+      @include elDef();
+      width: 28px;
+      height: 28px;
+      background-color: var(--color-green);
+      left: 0;
+      top: 0;
+    }
+
+    &--delivery {
+      &::after {
+        @include maskImage(url('../images/icons/delivery.svg'), contain);
+      }
+    }
+
+    &--message {
+      &::after {
+        @include maskImage(url('../images/icons/message.svg'), contain);
+      }
+    }
+
+    &--discount {
+      &::after {
+        @include maskImage(url('../images/icons/discount.svg'), contain);
+      }
+    }
+
+    &--warranty {
+      &::after {
+        @include maskImage(url('../images/icons/warranty.svg'), contain);
+      }
+    }
+  }
+}

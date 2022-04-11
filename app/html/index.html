@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+
+    <title>Lusteroid</title>
+  </head>
+
+  <body>
+    @include('./components/popups/_popups.html')
+
+    <h1 class="visually-hidden">Главная</h1>
+
+    <div class="site-wrapper">
+      @include('./components/_header.html')
+
+      <main class="main">
+        @include('./components/_hero.html')
+        @include('./components/_advantages.html')
+        @include('./components/_banners.html')
+        @include('./components/_deals-day.html')
+        @include('./components/_type.html')
+        @include('./components/_our-news.html')
+        @include('./components/_categories.html')
+        @include('./components/_categories-fixtures.html')
+        @include('./components/_categories-electrical-goods.html')
+        @include('./components/_style.html')
+        @include('./components/_brands.html')
+        @include('./components/_about-section.html')
+        @include('./components/_bought-today.html')
+        @include('./components/_request.html')
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>

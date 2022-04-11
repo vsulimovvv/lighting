@@ -1,0 +1,243 @@
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-color: var(--color-white);
+  z-index: 12;
+  width: 300px;
+
+  @include breakpointsMaxW($bp-991) {
+    width: 80%;
+  }
+
+  transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 350ms ease-in-out;
+
+  @include adaptive-value('padding', 40, 20, 1);
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    box-shadow: 0px 36px 51px 0px;
+  }
+
+  &__logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 113px;
+    height: 60px;
+    img {
+      @include img(contain);
+    }
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 24px;
+  }
+
+  &__btn {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    padding: 15px 77px 15px 60px;
+    border-radius: 5px;
+    position: relative;
+
+    &::before {
+      @include elDef();
+      width: 7px;
+      height: 7px;
+      @include maskImage(url('../images/icons/triangle.svg'), contain);
+      background-color: var(--color-white);
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+    }
+
+    &:hover {
+      & + .dropmenu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+
+    &::after {
+      @include elDef();
+      width: 20px;
+      height: 15px;
+      @include maskImage(url('../images/icons/catalog-btn-icon.svg'), contain);
+      background-color: var(--color-white);
+      top: 50%;
+      transform: translateY(-50%);
+      left: 20px;
+    }
+  }
+
+  &__catalog {
+    position: relative;
+    .dropmenu {
+      transform: translateY(-10px);
+      opacity: 0;
+      visibility: hidden;
+      z-index: 10;
+      width: 200px;
+      position: absolute;
+      left: 0;
+      top: 60px;
+      background-color: var(--color-white);
+      box-shadow: 0px 19px 51px 0px rgba(53, 56, 62, 0.23);
+      border-radius: 10px;
+      padding: 0 21px;
+      transition: 450ms ease;
+      transition-delay: 150ms;
+
+      &:hover {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      &__item {
+        border-bottom: 1px solid #ebebeb;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      &__link {
+        display: block;
+        width: 100%;
+        color: var(--color-dark);
+        padding: 12px 0;
+        transition: 150ms ease;
+        position: relative;
+        padding-right: 20px;
+
+        &::after {
+          @include elDef();
+          width: 10px;
+          height: 10px;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%) rotate(-90deg);
+          @include maskImage(url('../images/sprite.svg#chevron'), 100%);
+          background-color: #d0d0d0;
+          transition: 150ms ease;
+        }
+
+        &:hover {
+          color: var(--color-accent);
+
+          &::after {
+            background-color: var(--color-accent);
+            transform: translateY(-50%) translateX(3px) rotate(-90deg);
+          }
+        }
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    display: block;
+    top: 22px;
+    right: -40px;
+    width: 20px;
+    height: 20px;
+    fill: var(--color-white);
+    z-index: 999;
+  }
+
+  &__bottom {
+    margin-top: auto;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__link {
+    width: 100%;
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    color: #373737;
+  }
+
+  &__body {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 24px;
+  }
+
+  &__tel {
+    font-size: 25px;
+    line-height: 1.1;
+    font-weight: 300;
+    color: #282828;
+    padding-left: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &-call {
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: underline;
+      color: var(--color-accent);
+    }
+
+    &::after {
+      @include elDef();
+      width: 14px;
+      height: 14px;
+      @include maskImage(url('../images/icons/call.svg'), contain);
+      background-color: var(--color-accent);
+      top: 7px;
+      left: 0;
+    }
+  }
+
+  .mobile-menu-box {
+    &__content {
+      padding-left: 20px;
+    }
+
+    &__list {
+      padding-top: 10px;
+      overflow-y: auto;
+      max-height: 150px;
+    }
+
+    &__name {
+      padding-right: 10px;
+      font-size: inherit;
+      display: block;
+      width: 100%;
+      text-align: left;
+      font-weight: inherit;
+    }
+
+    &__link {
+      display: block;
+      font-size: 16px;
+      padding: 5px 0;
+    }
+  }
+}

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link
+  rel="shortcut icon"
+  href="images/favicon.png"
+  type="image/x-icon"
+/>
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.min.css" />
+
+
+    <title>Lusteroid</title>
+  </head>
+
+  <body>
+    
+
+    <h1 class="visually-hidden">Главная</h1>
+
+    <div class="site-wrapper">
+      <header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <a class="header__logo logo" href="#">
+          <img src="images/logo.png" alt="Логотип" />
+        </a>
+
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
+
+        <a class="header__phone phone-box" href="tel:+79060830099">
+          <span class="phone-box__numbers">8 (906) 083 00 99</span>
+          <span class="phone-box__text">заказать звонок</span>
+        </a>
+
+        <form class="header__search form-search">
+          <div class="form-search__group">
+            <input
+              class="form-search__input"
+              placeholder="Поиск по сайту"
+              required
+            />
+
+            <select class="form-search__select select">
+              <option value="1">Искать в категории</option>
+              <option value="2">Искать в категории</option>
+              <option value="3">Искать в категории</option>
+              <option value="4">Искать в категории</option>
+              <option value="5">Искать в категории</option>
+            </select>
+
+            <button class="form-search__btn" type="submit">
+              <svg width="14" height="14">
+                <use xlink:href="images/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <div class="header__tools header-tools">
+          <ul class="header-tools__list">
+            <li class="header-tools__item">
+              <a class="header-tools__link" href="#">
+                <svg width="17" height="17">
+                  <use xlink:href="images/sprite.svg#heart"></use>
+                </svg>
+
+                <span class="header-tools__count">0</span>
+              </a>
+            </li>
+            <li class="header-tools__item">
+              <a class="header-tools__link" href="#">
+                <svg width="17" height="17">
+                  <use xlink:href="images/sprite.svg#filter"></use>
+                </svg>
+
+                <span class="header-tools__count">0</span>
+              </a>
+            </li>
+            <li class="header-tools__item">
+              <a class="header-tools__link" href="#">
+                <svg width="17" height="17">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
+
+                <span class="header-tools__count header-tools__count--bg"
+                  >0</span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--catalog" href="#">Каталог</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#">РАСПРОДАЖА</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">ЛЮСТРЫ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">СВЕТИЛЬНИКИ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">БРА</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">ТОРШЕРЫ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">УЛИЧНОЕ ОСВЕЩЕНИЕ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Предметы интерьера</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--dropdown" href="#">Услуги</a>
+
+              <div class="dropmenu">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Курсы посуточной аренды</a
+                    >
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Управление посуточной арендой</a
+                    >
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Подбор помещения для посуточной аренды</a
+                    >
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Плохие отзывы от гостей</a
+                    >
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Как сдавать апартаменты или квартиру посуточно
+                      официально</a
+                    >
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Через какие сервисы сдавать квартиру посуточно</a
+                    >
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Как выбрать постельное белье для посуточной сдачи?</a
+                    >
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Сдача квартиры через агентство</a
+                    >
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Сейфы для ключей</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Как принимать квартиру после проживания?</a
+                    >
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Кражи в посуточных квартирах</a
+                    >
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Как сдавать квартиру посуточно самому?</a
+                    >
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">в управление</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section
+  class="hero hero--about"
+  style="background-image: url('images/content/hero-about.jpg')"
+>
+  <div class="container">
+    <div class="hero__wrapper">
+      <div class="hero__offer">
+        <h2 class="hero__title title-600">
+          Мы продаём не просто люстру или бра, мы продаём – решение»
+        </h2>
+        <div class="hero__text">
+          <p>
+            История компании начинается с открытия в 2004 году первого нашего
+            магазина люстр в городе Москве. За годы своего существования мы
+            развили сеть магазинов «Люстероид» в городе Москве и МО.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="activity">
+  <div class="container">
+    <div class="activity__wrapper">
+      <div class="activity__left">
+        <div class="activity__boxes">
+          <article class="activity-box">
+            <h3 class="activity-box__title">
+              Миссия нашей <span>компании</span>
+            </h3>
+            <div class="activity-box__text">
+              <p>
+                Привнести в каждый дом красивый, правильный и качественный свет.
+              </p>
+            </div>
+          </article>
+          <article class="activity-box">
+            <h3 class="activity-box__title">Наши<span>ценности</span></h3>
+            <div class="activity-box__text">
+              <p>
+                Поддержание высокого качества обслуживания и репутации компании.
+              </p>
+            </div>
+          </article>
+          <article class="activity-box">
+            <h3 class="activity-box__title">Наше<span>видение</span></h3>
+            <div class="activity-box__text">
+              <p>
+                К 2026 году расширить географию нашего присутствия в еще 5
+                городах.
+              </p>
+            </div>
+          </article>
+          <article class="activity-box activity-box--requisites">
+            <h3 class="visually-hidden">Реквизиты</h3>
+
+            <button
+              class="activity-box__btn"
+              type="button"
+              aria-label="Скачать реквизиты"
+            >
+              <svg width="20" height="20">
+                <use xlink:href="images/sprite.svg#download"></use>
+              </svg>
+            </button>
+            <ul class="activity-box__list">
+              <li class="activity-box__item">ИНН: 7707453960</li>
+              <li class="activity-box__item">КПП: 770701001</li>
+              <li class="activity-box__item">ОГРН: 1217700263110</li>
+              <li class="activity-box__item">
+                Юридический адрес: 127055, г. Москва, туп.
+              </li>
+              <li class="activity-box__item">
+                1-Й Тихвинский, д.5-7, оф.ПОМ/КОМ/оф.I/1/88
+              </li>
+              <li class="activity-box__item">Р/С: 40702810010000827266</li>
+              <li class="activity-box__item">К/С: 30101810145250000974</li>
+              <li class="activity-box__item">БИК: 044525974</li>
+              <li class="activity-box__item">АО "ТИНЬКОФФ БАНК"</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+      <div class="activity__right">
+        <h2 class="activity__title section-title">
+          Основной вид деятельности нашей компании - освещение:
+        </h2>
+        <div class="activity__text">
+          <p>
+            освещение: люстры, бра, светильники, настольные лампы, торшеры,
+            уличное освещение, лента LED, розетки, выключатели и др.
+          </p>
+          <p>
+            Продажа товаров компании «Люcтероид» проводится круглосуточно на
+            нашем сайте
+          </p>
+          <p>
+            Доставка осуществляется любыми доступными способами. Мы сотрудничаем
+            с транспортными компаниями и можем отправить Вам товар в разные
+            города России.
+          </p>
+          <p>
+            В наших магазинах работают специалисты со стажем не менее 2-х лет в
+            данной области, которые проконсультируют и помогут выбрать
+            необходимые Вам товары.
+          </p>
+        </div>
+        <div
+          class="activity__preview"
+          style="background-image: url('images/content/activity.jpg')"
+        ></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__left">
+        <div class="footer__col">
+          <span class="footer__name">Информация</span>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">О компании</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Услуги</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Как купить</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Производители</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Магазины</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <span class="footer__name">Информация</span>
+          <div class="footer__lists">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Люстры</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Светильники</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Бра и подсветки</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Торшеры</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Настольные лампы</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Споты</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Трековые системы</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Уличное освещение</a>
+              </li>
+            </ul>
+
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Офисное освещение</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Водное освещение</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Предметы интерьера</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Светодиодная подсветка</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Лампочки</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Электротовары</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Комплектующие</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Новогодние товары</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer__col">
+          <span class="footer__name">Время работы</span>
+          <div class="footer__schedule">
+            <span>Пн. – Вс: с 10:00 до 19:00</span>
+            <span>Колл-центр: с 9:00 до 21:00</span>
+          </div>
+
+          <div class="footer__socials socials">
+            <div class="socials__name">Мы в социальных сетях:</div>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--vk"
+                  href="#"
+                  aria-label="vk"
+                ></a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--instagram"
+                  href="#"
+                  aria-label="instagram"
+                ></a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--mailru"
+                  href="#"
+                  aria-label="mailru"
+                ></a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--whatsapp"
+                  href="#"
+                  aria-label="whatsapp"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__col">
+          <span class="footer__name">Время работы</span>
+          <div class="footer__schedule">
+            <span>Пн. – Вс: с 10:00 до 19:00</span>
+            <span>Колл-центр: с 9:00 до 21:00</span>
+          </div>
+
+          <div class="footer__socials socials">
+            <div class="socials__name">Мы в социальных сетях:</div>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--vk"
+                  href="#"
+                  aria-label="vk"
+                ></a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--instagram"
+                  href="#"
+                  aria-label="instagram"
+                ></a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--mailru"
+                  href="#"
+                  aria-label="mailru"
+                ></a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--whatsapp"
+                  href="#"
+                  aria-label="whatsapp"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
+
+<!-- <label class="checkbox">
+  <input class="checkbox__input" type="checkbox" required />
+  <span class="checkbox__box"></span>
+  <span class="checkbox__text">
+    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+  </span> 
+</label> -->

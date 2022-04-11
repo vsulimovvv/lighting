@@ -1,0 +1,44 @@
+.request {
+  color: var(--color-white);
+  background-color: var(--color-green-dark);
+  @include adaptive-value('padding-top', 80, 40, 1);
+  @include adaptive-value('padding-bottom', 80, 40, 1);
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    @include adaptive-value('font-size', 40, 25, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      margin-bottom: 20px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      margin-bottom: 10px;
+    }
+
+    span {
+      color: var(--color-accent);
+    }
+  }
+  &__text {
+    span {
+      color: var(--color-accent);
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 150px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: calc(30px + (150 - 30) * ((100vw - 991px) / (1300 - 991)));
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      gap: 30px;
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,0 +1,3655 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- simplebar -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.min.css" />
+
+
+    <title>Lusteroid</title>
+  </head>
+
+  <body>
+    <div class="popup popup--back-call">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title section-title">Обратный звонок</h2>
+      <div class="popup__text">
+        <p>Оставьте Ваши данные и мы свяжемся с Вами</p>
+      </div>
+
+      <form class="popup__form form-submit">
+        <div class="form-submit__group">
+          <label for="back-call-tel" class="form-submit__label"
+            >Контактный телефон</label
+          >
+          <input
+            class="form-submit__input"
+            type="tel"
+            id="back-call-tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" required />
+          <span class="checkbox__box"></span>
+          <span class="checkbox__text">
+            Согласен на
+            <a href="#">обработку персональных данных</a>
+          </span>
+        </label>
+
+        <button class="form-submit__btn btn" type="submit">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <h1 class="visually-hidden">Главная</h1>
+
+    <div class="site-wrapper">
+      <header class="header">
+  <div class="overlay"></div>
+  <div class="mobile-menu">
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="19" height="19">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="#">
+        <img src="images/logo.png" alt="Логотип" />
+      </a>
+
+      <div class="mobile-menu__catalog">
+        <button class="mobile-menu__btn mobile-menu__btn--dropdown">
+          Каталог
+        </button>
+
+        <div class="dropmenu">
+          <ul class="dropmenu__list">
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Люстры</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Светильники</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Электротовары</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <ul class="mobile-menu__body">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Главная</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">О компании</a>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Услуги
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Сборка люстр</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Монтаж люстр</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Рассрочка до 6 мес.</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Как купить</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Производители</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Магазины</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Контакты</a>
+      </li>
+    </ul>
+
+    <div class="mobile-menu__bottom">
+      <a class="mobile-menu__tel" href="tel:+79060830099">
+        <span>8 (906) 083 00 99</span>
+        <span class="mobile-menu__tel-call">заказть звонок</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <a class="header__logo logo" href="#">
+          <img src="images/logo.png" alt="Логотип" />
+        </a>
+
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
+
+        <div class="phone-box">
+          <a class="phone-box__phone" href="tel:+79060830099">
+            <span class="phone-box__numbers">8 (906) 083 00 99</span>
+          </a>
+          <button class="phone-box__call" type="button">заказать звонок</button>
+        </div>
+
+        <form class="header__search form-search">
+          <div class="form-search__group">
+            <input
+              class="form-search__input"
+              placeholder="Поиск по сайту"
+              required
+            />
+
+            <select class="form-search__select select">
+              <option value="1">Искать в категории</option>
+              <option value="2">Искать в категории</option>
+              <option value="3">Искать в категории</option>
+              <option value="4">Искать в категории</option>
+              <option value="5">Искать в категории</option>
+            </select>
+
+            <button class="form-search__btn" type="submit">
+              <svg width="14" height="14">
+                <use xlink:href="images/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <div class="header__tools header-tools">
+          <ul class="header-tools__list">
+            <li class="header-tools__item">
+              <a class="header-tools__link" href="#">
+                <svg width="17" height="17">
+                  <use xlink:href="images/sprite.svg#heart"></use>
+                </svg>
+
+                <span class="header-tools__count">0</span>
+              </a>
+            </li>
+            <li class="header-tools__item">
+              <a class="header-tools__link" href="#">
+                <svg width="17" height="17">
+                  <use xlink:href="images/sprite.svg#filter"></use>
+                </svg>
+
+                <span class="header-tools__count">0</span>
+              </a>
+            </li>
+            <li class="header-tools__item">
+              <a class="header-tools__link" href="#">
+                <svg width="17" height="17">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
+
+                <span class="header-tools__count header-tools__count--bg"
+                  >0</span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a
+                class="menu__link menu__link--catalog menu__link--dropdown"
+                href="#"
+                >Каталог</a
+              >
+
+              <div class="dropmenu dropmenu--left">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Люстры</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Светильники</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Электротовары.</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#">РАСПРОДАЖА</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">ЛЮСТРЫ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">СВЕТИЛЬНИКИ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">БРА</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">ТОРШЕРЫ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">УЛИЧНОЕ ОСВЕЩЕНИЕ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Предметы интерьера</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--dropdown" href="#">Услуги</a>
+
+              <div class="dropmenu">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Сборка люстр</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Монтаж люстр</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Рассрочка до 6 мес.</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="product">
+  <div class="container">
+    <div class="product__top">
+      <h2 class="product__title title-600">
+        Потолочная люстра Crystal Lux Sergio PL6 Gold
+      </h2>
+    </div>
+    <div class="product__content">
+      <div class="product__slider">
+        <div class="slider-thumbs">
+          <div class="slider-thumbs__nav swiper" id="slider-nav">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide slider-nav__slide">
+                <img src="images/content/products/1.png" alt="Слайд №1" />
+              </li>
+              <li class="swiper-slide slider-nav__slide">
+                <img src="images/content/products/2-big.png" alt="Слайд №1" />
+              </li>
+              <li class="swiper-slide slider-nav__slide">
+                <img src="images/content/products/2-big.png" alt="Слайд №1" />
+              </li>
+              <li class="swiper-slide slider-nav__slide">
+                <img src="images/content/products/1.png" alt="Слайд №1" />
+              </li>
+              <li class="swiper-slide slider-nav__slide">
+                <img src="images/content/products/2-big.png" alt="Слайд №1" />
+              </li>
+              <li class="swiper-slide slider-nav__slide">
+                <img src="images/content/products/2-big.png" alt="Слайд №1" />
+              </li>
+            </ul>
+          </div>
+
+          <div class="slider-thumbs__main swiper" id="slider-main">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img src="images/content/products/1.png" alt="Слайд №1" />
+              </li>
+              <li class="swiper-slide">
+                <img src="images/content/products/2-big.png" alt="Слайд №1" />
+              </li>
+              <li class="swiper-slide">
+                <img src="images/content/products/2-big.png" alt="Слайд №1" />
+              </li>
+              <li class="swiper-slide">
+                <img src="images/content/products/1.png" alt="Слайд №1" />
+              </li>
+              <li class="swiper-slide">
+                <img src="images/content/products/2-big.png" alt="Слайд №1" />
+              </li>
+              <li class="swiper-slide">
+                <img src="images/content/products/2-big.png" alt="Слайд №1" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="product__right">
+        <div class="product__spec spec-product">
+          <div class="spec-product__top">
+            <span class="spec-product__name"> Характеристики </span>
+          </div>
+          <ul class="spec-product__list">
+            <li class="spec-product__item">
+              <div class="spec-product__left">Бренд</div>
+              <div class="spec-product__right spec-product__right--highlight">
+                CRYSTAL LUX
+              </div>
+            </li>
+            <li class="spec-product__item">
+              <div class="spec-product__left">Артикул</div>
+              <div class="spec-product__right">Sergio PL6 Gold</div>
+            </li>
+            <li class="spec-product__item">
+              <div class="spec-product__left">Стиль</div>
+              <div class="spec-product__right spec-product__right--highlight">
+                Современный
+              </div>
+            </li>
+            <li class="spec-product__item">
+              <div class="spec-product__left">Гарантия (лет)</div>
+              <div class="spec-product__right">12 месяцев</div>
+            </li>
+            <li class="spec-product__item">
+              <div class="spec-product__left">Интерьер</div>
+              <div class="spec-product__right spec-product__right--highlight">
+                Для спальни
+              </div>
+            </li>
+            <li class="spec-product__item">
+              <div class="spec-product__left">Цвет</div>
+              <div class="spec-product__right spec-product__right--highlight">
+                Бежевый
+              </div>
+            </li>
+            <li class="spec-product__item">
+              <div class="spec-product__left">Общая мощность, Вт</div>
+              <div class="spec-product__right">360</div>
+            </li>
+            <li class="spec-product__item">
+              <div class="spec-product__left">Напряжение, V</div>
+              <div class="spec-product__right">220-240</div>
+            </li>
+            <li class="spec-product__item">
+              <div class="spec-product__left">Степень защиты, IP</div>
+              <div class="spec-product__right">IP20</div>
+            </li>
+            <li class="spec-product__item">
+              <div class="spec-product__left">Гарантия (лет)</div>
+              <div class="spec-product__right">12 месяцев</div>
+            </li>
+          </ul>
+          <a class="spec-product__btn btn btn--light" href="#"
+            >Все характеристики</a
+          >
+        </div>
+        <div class="product__actions actions-product">
+          <div class="actions-product__price">
+            <p>28 200 ₽ / <span>шт</span></p>
+          </div>
+          <div class="actions-product__details">
+            <p class="actions-product__stock">В наличии: <span>18</span></p>
+            <a class="actions-product__cheap" href="#">Нашли дешевле</a>
+          </div>
+          <div class="actions-product__quantity">
+            <span class="actions-product__name">Количество</span>
+
+            <div class="actions-product__buy">
+              <div class="actions-product__counter counter">
+                <button
+                  class="counter__btn counter__btn--decrease"
+                  type="button"
+                  aria-label="Добавить"
+                >
+                  -
+                </button>
+                <input class="counter__input" type="number" value="1" />
+                <button class="counter__btn counter__btn--increase" type="button" aria-label="Вычесть">
+                  +
+                </button>
+              </div>
+              <button
+                class="actions-product__btn actions-product__btn--cart btn"
+                type="button"
+              >
+                В корзину
+              </button>
+              <button
+                class="actions-product__btn btn btn--light actions-product__btn--buy"
+              >
+                Купить в 1 клик
+              </button>
+            </div>
+            <ul class="actions-product__list">
+              <li class="actions-product__item actions-product__item--gift">
+                <button class="actions-product__link" type="button">
+                  Хочу в подарок
+                </button>
+              </li>
+              <li class="actions-product__item actions-product__item--pickup">
+                Самовывоз через 1-2 дня бесплатно
+              </li>
+              <li class="actions-product__item actions-product__item--deliery">
+                Доставка 1-2 дня 390 рублей
+              </li>
+              <li class="actions-product__item actions-product__item--deliery">
+                От 3 500 рублей - бесплатно
+              </li>
+            </ul>
+          </div>
+          <div class="actions-product__notify">
+            <p>
+              Цена действительна только для интернет-магазина и может отличаться
+              от цен в розничных магазинах
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product__tabs tabs">
+      <ul class="tabs__top">
+        <li class="tabs__top-item">
+          <button class="tabs__top-btn tabs__top-btn--active" type="button">
+            Характеристики и описание
+          </button>
+        </li>
+        <li class="tabs__top-item">
+          <button class="tabs__top-btn" type="button">Отзывы</button>
+        </li>
+        <li class="tabs__top-item">
+          <button class="tabs__top-btn" type="button">Как купить</button>
+        </li>
+        <li class="tabs__top-item">
+          <button class="tabs__top-btn" type="button">Оплата</button>
+        </li>
+        <li class="tabs__top-item">
+          <button class="tabs__top-btn" type="button">Доставка</button>
+        </li>
+      </ul>
+
+      <div class="tabs__content active">
+        <div class="tabs__boxes">
+          <div class="tabs__box tabs-box tabs-box--main">
+            <span class="tabs-box__name">Основные</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--interior">
+            <span class="tabs-box__name">Интерьер</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--color">
+            <span class="tabs-box__name">Цвет и материал</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Артикул</div>
+                <div class="tabs-box__right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Бренд</div>
+                <div class="tabs-box__right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Страна</div>
+                <div class="tabs-box__right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Стиль</div>
+                <div class="tabs-box__right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--lamps">
+            <span class="tabs-box__name">Лампы</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--sizes">
+            <span class="tabs-box__name">Размеры</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--electrician">
+            <span class="tabs-box__name">Электрика</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Страна</div>
+                <div class="tabs-box__right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Стиль</div>
+                <div class="tabs-box__right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--additionally">
+            <span class="tabs-box__name">Дополнительно</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__content">
+        <div class="tabs__boxes">
+          <div class="tabs__box tabs-box tabs-box--main">
+            <span class="tabs-box__name">Основные</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--interior">
+            <span class="tabs-box__name">Интерьер</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--color">
+            <span class="tabs-box__name">Цвет и материал</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Артикул</div>
+                <div class="tabs-box__right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Бренд</div>
+                <div class="tabs-box__right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Страна</div>
+                <div class="tabs-box__right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Стиль</div>
+                <div class="tabs-box__right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--lamps">
+            <span class="tabs-box__name">Лампы</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--sizes">
+            <span class="tabs-box__name">Размеры</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--electrician">
+            <span class="tabs-box__name">Электрика</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Страна</div>
+                <div class="tabs-box__right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Стиль</div>
+                <div class="tabs-box__right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--additionally">
+            <span class="tabs-box__name">Дополнительно</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__content">
+        <div class="tabs__boxes">
+          <div class="tabs__box tabs-box tabs-box--main">
+            <span class="tabs-box__name">Основные</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--interior">
+            <span class="tabs-box__name">Интерьер</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--color">
+            <span class="tabs-box__name">Цвет и материал</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Артикул</div>
+                <div class="tabs-box__right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Бренд</div>
+                <div class="tabs-box__right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Страна</div>
+                <div class="tabs-box__right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Стиль</div>
+                <div class="tabs-box__right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--lamps">
+            <span class="tabs-box__name">Лампы</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--sizes">
+            <span class="tabs-box__name">Размеры</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--electrician">
+            <span class="tabs-box__name">Электрика</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Страна</div>
+                <div class="tabs-box__right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Стиль</div>
+                <div class="tabs-box__right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--additionally">
+            <span class="tabs-box__name">Дополнительно</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__content">
+        <div class="tabs__boxes">
+          <div class="tabs__box tabs-box tabs-box--main">
+            <span class="tabs-box__name">Основные</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--interior">
+            <span class="tabs-box__name">Интерьер</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--color">
+            <span class="tabs-box__name">Цвет и материал</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Артикул</div>
+                <div class="tabs-box__right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Бренд</div>
+                <div class="tabs-box__right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Страна</div>
+                <div class="tabs-box__right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Стиль</div>
+                <div class="tabs-box__right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--lamps">
+            <span class="tabs-box__name">Лампы</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--sizes">
+            <span class="tabs-box__name">Размеры</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--electrician">
+            <span class="tabs-box__name">Электрика</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Страна</div>
+                <div class="tabs-box__right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Стиль</div>
+                <div class="tabs-box__right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--additionally">
+            <span class="tabs-box__name">Дополнительно</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__content">
+        <div class="tabs__boxes">
+          <div class="tabs__box tabs-box tabs-box--main">
+            <span class="tabs-box__name">Основные</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--interior">
+            <span class="tabs-box__name">Интерьер</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--color">
+            <span class="tabs-box__name">Цвет и материал</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Артикул</div>
+                <div class="tabs-box__right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Бренд</div>
+                <div class="tabs-box__right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Страна</div>
+                <div class="tabs-box__right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Стиль</div>
+                <div class="tabs-box__right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--lamps">
+            <span class="tabs-box__name">Лампы</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--sizes">
+            <span class="tabs-box__name">Размеры</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--electrician">
+            <span class="tabs-box__name">Электрика</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Страна</div>
+                <div class="tabs-box__right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="tabs-box__left">Стиль</div>
+                <div class="tabs-box__right">Современный</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__box tabs-box tabs-box--additionally">
+            <span class="tabs-box__name">Дополнительно</span>
+
+            <ul class="tabs-box__list">
+              <li class="tabs-box__item">
+                <div class="left">Артикул</div>
+                <div class="right">Sergio PL6 Gold</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Бренд</div>
+                <div class="right highlight">CRYSTAL LUX</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Страна</div>
+                <div class="right">Испания</div>
+              </li>
+              <li class="tabs-box__item">
+                <div class="left">Стиль</div>
+                <div class="right">Современный</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="description">
+  <div class="container">
+    <h2 class="description__title small-title">Описание</h2>
+    <div class="description__text">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </div>
+  </div>
+</section>
+
+        <section class="products">
+  <div class="container">
+    <div class="products__top">
+      <h2 class="products__title small-title">Добавить лампочки в заказ</h2>
+    </div>
+    <div class="products__slider bought-today swiper">
+      <ul class="products__slides swiper-wrapper">
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/2.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Уличный настенный светильник Paulmann Lantea 94399
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  9 310 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/3.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Светодиодный спот Odeon Light Beam 3912/9WL
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  1963 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/4.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Встраиваемый светодиодный светильник Paulmann Set Daz
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  35 170 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/5.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Светодиодный спот ST Luce Bondi SL1586.413.01
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  5 920 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/6.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Подвесная люстра Freya Benoit FR2566-PL-03-WG
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  15 690 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/2.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Уличный настенный светильник Paulmann Lantea 94399
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  9 310 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/3.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Светодиодный спот Odeon Light Beam 3912/9WL
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  1963 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/4.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Встраиваемый светодиодный светильник Paulmann Set Daz
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  35 170 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/5.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Светодиодный спот ST Luce Bondi SL1586.413.01
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  5 920 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/6.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Подвесная люстра Freya Benoit FR2566-PL-03-WG
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  15 690 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+
+      <button
+        class="swiper-button-next"
+        type="button"
+        aria-label="Следующий"
+      ></button>
+      <button
+        class="swiper-button-prev"
+        type="button"
+        aria-label="Предыдущий"
+      ></button>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+        <section class="products">
+  <div class="container">
+    <div class="products__top">
+      <h2 class="products__title small-title">Сегодня купили</h2>
+    </div>
+    <div class="products__slider bought-today swiper">
+      <ul class="products__slides swiper-wrapper">
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/2.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Уличный настенный светильник Paulmann Lantea 94399
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  9 310 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/3.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Светодиодный спот Odeon Light Beam 3912/9WL
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  1963 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/4.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Встраиваемый светодиодный светильник Paulmann Set Daz
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  35 170 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/5.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Светодиодный спот ST Luce Bondi SL1586.413.01
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  5 920 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/6.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Подвесная люстра Freya Benoit FR2566-PL-03-WG
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  15 690 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/2.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Уличный настенный светильник Paulmann Lantea 94399
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  9 310 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/3.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Светодиодный спот Odeon Light Beam 3912/9WL
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  1963 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/4.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Встраиваемый светодиодный светильник Paulmann Set Daz
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  35 170 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/5.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Светодиодный спот ST Luce Bondi SL1586.413.01
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  5 920 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/6.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Подвесная люстра Freya Benoit FR2566-PL-03-WG
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  15 690 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+
+      <button
+        class="swiper-button-next"
+        type="button"
+        aria-label="Следующий"
+      ></button>
+      <button
+        class="swiper-button-prev"
+        type="button"
+        aria-label="Предыдущий"
+      ></button>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+        <section class="products">
+  <div class="container">
+    <div class="products__top">
+      <h2 class="products__title small-title">Из этой коллекции</h2>
+    </div>
+    <div class="products__slider bought-today swiper">
+      <ul class="products__slides swiper-wrapper">
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/2.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Уличный настенный светильник Paulmann Lantea 94399
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  9 310 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/3.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Светодиодный спот Odeon Light Beam 3912/9WL
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  1963 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/4.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Встраиваемый светодиодный светильник Paulmann Set Daz
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  35 170 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/5.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Светодиодный спот ST Luce Bondi SL1586.413.01
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  5 920 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/6.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Подвесная люстра Freya Benoit FR2566-PL-03-WG
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  15 690 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/2.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Уличный настенный светильник Paulmann Lantea 94399
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  9 310 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/3.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Светодиодный спот Odeon Light Beam 3912/9WL
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  1963 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/4.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Встраиваемый светодиодный светильник Paulmann Set Daz
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  35 170 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/5.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Светодиодный спот ST Luce Bondi SL1586.413.01
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  5 920 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__link" href="#"></a>
+
+            <div class="product-card__actions card-actions">
+              <ul class="card-actions__list">
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Посмтореть"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#eye"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в сравнение"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="card-actions__item">
+                  <button
+                    class="card-actions__btn card-actions__btn--active"
+                    aria-label="Добавить в корзину"
+                    type="button"
+                  >
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card__img">
+              <img src="images/content/products/6.png" alt="Продукт" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">
+                Подвесная люстра Freya Benoit FR2566-PL-03-WG
+              </h3>
+              <div class="product-card__prices">
+                <p class="product-card__price product-card__price--new">
+                  15 690 <span>₽</span>
+                </p>
+                <p class="product-card__price product-card__price--old">
+                  68 990 <span>₽</span>
+                </p>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+
+      <button
+        class="swiper-button-next"
+        type="button"
+        aria-label="Следующий"
+      ></button>
+      <button
+        class="swiper-button-prev"
+        type="button"
+        aria-label="Предыдущий"
+      ></button>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__left">
+        <div class="footer__col">
+          <span class="footer__name">Информация</span>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">О компании</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Услуги</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Как купить</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Производители</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Магазины</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <span class="footer__name">Информация</span>
+          <div class="footer__lists">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Люстры</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Светильники</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Бра и подсветки</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Торшеры</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Настольные лампы</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Споты</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Трековые системы</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Уличное освещение</a>
+              </li>
+            </ul>
+
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Офисное освещение</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Водное освещение</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Предметы интерьера</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Светодиодная подсветка</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Лампочки</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Электротовары</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Комплектующие</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Новогодние товары</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer__col">
+          <span class="footer__name">Время работы</span>
+          <div class="footer__schedule">
+            <span>Пн. – Вс: с 10:00 до 19:00</span>
+            <span>Колл-центр: с 9:00 до 21:00</span>
+          </div>
+
+          <div class="footer__socials socials">
+            <div class="socials__name">Мы в социальных сетях:</div>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--vk"
+                  href="#"
+                  aria-label="vk"
+                ></a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--instagram"
+                  href="#"
+                  aria-label="instagram"
+                ></a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--mailru"
+                  href="#"
+                  aria-label="mailru"
+                ></a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--whatsapp"
+                  href="#"
+                  aria-label="whatsapp"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__col">
+          <span class="footer__name">Наши контакты</span>
+          <div class="footer__links">
+            <a class="footer__tel" href="tel:+79060830099">8 (906) 083 00 99</a>
+            <a class="footer__mail" href="mailto:lusteroidofficial@mail.ru">
+              lusteroidofficial@mail.ru
+            </a>
+            <address class="footer__address">
+              Москва, Калужское шоссе 20км , 4с1 ТЦ Славянский Стан, Магазин
+              1.35
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copy">
+        <p>
+          2022 © Lusteroid — это удобный сервис, с помощью которого легко
+          выбрать светильник, проверить, как он подходит к вашему интерьеру/ Все
+          права защищены.
+        </p>
+      </div>
+      <div class="footer__bottom-right">
+        <div class="footer__by">
+          <span>Разработка сайта</span>
+          <a
+            class="footer__company"
+            href="https://razrabotka-saita.ru/"
+            target="_blank"
+          >
+            <img src="images/logo-company.png" alt="Адванс медиа" />
+          </a>
+        </div>
+        <a class="footer__arrow-top" href="#">
+          <svg width="15" height="15">
+            <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- wNumb -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js"></script>
+
+<!-- simplebar -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.js"
+></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+    <script src="js/product.js"></script>
+  </body>
+</html>

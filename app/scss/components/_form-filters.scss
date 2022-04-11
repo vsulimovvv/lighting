@@ -1,0 +1,56 @@
+.form-filter {
+  &__box {
+    border: 1px solid #ebebeb;
+    padding-right: 10px;
+
+    &.accordion.active {
+    }
+  }
+
+  &__heading {
+    font-size: 17px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #282828;
+    display: block;
+    width: 100%;
+    text-align-last: left;
+    padding: 20px;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #494949;
+  }
+
+  &__inner {
+    display: grid;
+    gap: 15px;
+    padding-left: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  &__group {
+    .checkbox {
+      &__box {
+        background-color: #f3f3f3;
+        border: 1px solid #dedede;
+      }
+      &__text {
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 400;
+        color: #494949;
+      }
+    }
+  }
+
+  &__list {
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,46 @@
+@import 'libs';
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'global';
+
+@import './animations';
+
+// * ===== Other components
+@import './components/breadcrumbs';
+@import './components/swiper-options';
+@import './components/custom-checkbox';
+@import './components/custom-select';
+@import './components/menu';
+@import './components/menu-mobile';
+@import './components/socials';
+@import './components/form-filters';
+@import './components/popups';
+
+// * ===== Card Components
+@import './components/card-product';
+
+// * ===== Section Components
+@import './components/footer';
+@import './components/header';
+@import './components/hero';
+@import './components/advantages';
+@import './components/banners';
+@import './components/type';
+@import './components/about-section';
+@import './components/brands';
+@import './components/style-section';
+@import './components/contacts';
+@import './components/request';
+@import './components/manufacturers';
+@import './components/checkout';
+@import './components/service-descr';
+@import './components/activity';
+@import './components/services';
+@import './components/shops';
+@import './components/categories';
+@import './components/product';
+@import './components/accordion';
+@import './components/catalog';
+@import './components/products';

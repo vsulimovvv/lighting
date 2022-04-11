@@ -1,0 +1,106 @@
+.socials {
+  &__name {
+    font-size: 19px;
+    line-height: 1.1;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__link {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+    border-radius: 5px;
+    transition: 150ms ease;
+
+    &::after {
+      @include elDef();
+      width: 19px;
+      height: 19px;
+      background-color: var(--color-white);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:hover {
+      background-color: var(--color-accent);
+      transform: scale(1.1);
+    }
+
+    &--vk {
+      &::after {
+        @include maskImage(url('../images/icons/vk.svg'), contain);
+      }
+    }
+
+    &--mailru {
+      &::after {
+        content: '@';
+        color: var(--color-white);
+        background-color: transparent;
+        font-size: 17px;
+      }
+    }
+
+    &--instagram {
+      &::after {
+        @include maskImage(url('../images/icons/instagram.svg'), contain);
+      }
+    }
+    &--whatsapp {
+      &::after {
+        @include maskImage(url('../images/icons/whatsapp.svg'), contain);
+      }
+    }
+  }
+
+  &--box {
+    background-color: #eeeeee;
+    padding: 15px 0;
+    @include adaptive-value('margin-bottom', 75, 40, 1);
+    
+    .socials {
+      &__name {
+        margin: 0;
+        margin-right: 25px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #3d3d3d;
+      }
+
+      &__inner {
+        display: flex;
+        align-items: center;
+      }
+
+      &__link {
+        &--vk {
+          background-color: #2787f5;
+        }
+        &--instagram {
+          background-image: linear-gradient(
+            61deg,
+            #fdc76d 6%,
+            #e35671 50%,
+            #9e42b4 95%
+          );
+        }
+        &--mailru {
+          background-color: #168de2;
+        }
+        &--whatsapp {
+          background-color: #65bc54;
+        }
+      }
+    }
+  }
+}

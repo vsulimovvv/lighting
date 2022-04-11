@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+
+    <title>Lusteroid</title>
+  </head>
+
+  <body>
+    @include('./components/popups/_popups.html')
+
+    <h1 class="visually-hidden">Главная</h1>
+
+    <div class="site-wrapper">
+      @include('./components/_header.html')
+
+      <main class="main">
+        @include('./components/_product.html')
+        @include('./components/_add-lamps.html')
+        @include('./components/_bought-today.html')
+        @include('./components/_some-collection.html')
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+    <script src="js/product.js"></script>
+  </body>
+</html>

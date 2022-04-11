@@ -1,4 +1,4 @@
-## Legal Expert
+## Осветительные приборы
 ### Страницы
 Главная: https://vsulimovvv.github.io/lighting/app/index.html  
 О компании: https://vsulimovvv.github.io/lighting/app/about.html  
